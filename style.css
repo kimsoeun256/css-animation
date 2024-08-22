@@ -1,0 +1,573 @@
+/*
+	1. background색을 원하는 색으로 넣어주세요.
+
+	2. 새의 몸통을 원하는대로 꾸며주세요.
+	- 센터정렬하면서 중앙보다 살짝 더 아래 위치하게 해주세요.
+
+*/
+
+html, body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background: skyblue;
+	overflow: hidden;
+}
+.loopy{
+	width: 300px;
+	height: 320px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: loopy 5s linear infinite ;
+	z-index: 100;
+}
+@keyframes loopy{
+	0%{
+		top: 50%;
+	}
+	25%{
+		top: 0%;
+	}
+	70%{
+		top: 100%;
+	}
+	100%{
+		top: 50%;
+	}
+}
+.head{
+	position: absolute;
+	left: 50px;
+	z-index: 10;
+	width: 200px;
+	height: 180px;
+	background-color: pink;
+	border-radius: 100%;
+	box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.5);
+}
+.d1{
+	position: absolute;
+	background-color: brown;
+	width: 10px;
+	height: 50px;
+	border-radius: 30px;
+	top: -45px;
+	left: 90px;
+	animation: d 1s linear infinite alternate;
+}
+@keyframes d{
+	0%{
+		transform: rotate(0deg);
+	}
+	50%{
+		transform: rotate(5deg);
+	}
+	100%{
+		transform: rotate(10deg);
+	}
+}
+.d2{
+	position: absolute;
+	background-color: brown;
+	width: 10px;
+	height: 50px;
+	border-radius: 30px; 
+	top: -45px;
+	left: 100px;
+	transform: rotate(20deg);
+	animation: d2 1s linear infinite alternate;
+}
+@keyframes d2{
+	0%{
+		transform: rotate(20deg);
+	}
+	50%{
+		transform: rotate(25deg);
+	}
+	100%{
+		transform: rotate(30deg);
+	}
+}
+.gwi1{
+	position: absolute;
+	left: 20px;
+	width: 30px;
+	height: 30px;
+	background-color: pink;
+	border-radius: 100%;
+}
+.gwi2{
+	position: absolute;
+	top: 0;
+	left: 150px;
+	width: 30px;
+	height: 30px;
+	background-color: pink;
+	border-radius: 100%;
+}
+/*------------------눈--------------*/
+.eye1{
+	position: absolute;
+	top: 65px;
+	left: 60px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: black;
+	animation: eye1 5s linear infinite alternate ;
+}
+#eye1{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: white;
+	animation: eye 5s linear infinite alternate ;
+}
+
+.eye2{
+	position: absolute;
+	top: 65px;
+	left: 120px;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: black;
+	animation: eye1 5s linear infinite alternate ;
+}
+#eye2{
+	z-index: 1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background-color: white;
+	animation: eye 5s linear infinite alternate ;
+}
+@keyframes eye1{
+	0%{
+		background-color: pink;
+	}
+	2%{
+		background-color: black;
+	}
+	98%{
+		background-color: black;
+	}
+	100%{
+		background-color: pink;
+	}
+}
+@keyframes eye{
+	0%{
+		background-color: pink;
+	}
+	2%{
+		background-color: white;
+	}
+	98%{
+		background-color: white;
+	}
+	100%{
+		background-color: pink;
+	}
+}
+/*-----------------------------------------------*/
+.cheek1{
+	width: 70px;
+	height: 70px;
+	background: radial-gradient( circle, hotpink, pink );
+	border-radius: 100%;
+	position: absolute;
+	top: 70px;
+	
+}
+.cheek2{
+	width: 70px;
+	height: 70px;
+	background: radial-gradient( circle, hotpink, pink );
+	border-radius: 100%;
+	position: absolute;
+	right: 0;
+	top: 70px;
+}
+.co{ 
+	border-bottom: 30px solid transparent;
+	border-top: 30px solid brown;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-radius: 100%;
+	position: absolute;
+	top: 90px;
+	left: 70px;
+}
+.mouth{
+	border-bottom: 10px solid red;
+	border-top: 30px solid transparent;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-radius: 100%;
+	position: absolute;
+	top: 93px;
+	left: 70px;
+}
+.tee{
+	width: 10px;
+	height: 15px;
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: -5px;
+	
+}
+/*--------------------------------------- body --------------------------- */
+.body{
+	z-index: 1;
+	width: 150px;
+	height: 200px;
+	background-color: pink;
+	border-radius: 90px;
+	position: absolute;
+	margin: 0 auto;
+	top: 120px;
+	left: 75px;
+	box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.5);
+}
+.pal1{
+	position: absolute;
+	z-index: 12;
+	top: 5px;
+	left: -30px;
+	border-radius: 20px;
+	width: 40px;
+	height: 80px;
+	background-color: pink;
+	box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.5);
+	animation: pal1 1s linear infinite alternate ;
+}
+@keyframes pal1{
+	0%{
+		transform: rotate(50deg);
+	}
+	50%{
+		transform: rotate(100deg);
+	}
+	100%{
+		transform: rotate(150deg);
+	}
+}
+.pal1 .tob{
+	position: absolute;
+	width: 5px;
+	height: 10px;
+	background-color: brown;
+}
+.pal1 #tob1{
+	top: 75px;
+	left: 7px;
+	transform: rotate(20deg);
+}
+.pal1 #tob2{
+	top: 78px;
+	left: 17px;
+}
+.pal1 #tob3{
+	top: 75px;
+	left: 27px;
+	transform: rotate(-20deg);
+}
+.pal2{
+	position: absolute;
+	z-index: 12;
+	top: 5px;
+	right: -30px;
+	border-radius: 20px;
+	width: 40px;
+	height: 80px;
+	background-color: pink;
+	box-shadow: 1px 1px 10px 1px rgba(255,255,255,0.5);
+	animation: pal2 1s linear infinite alternate ;
+}
+@keyframes pal2{
+	0%{
+		transform: rotate(-50deg);
+	}
+	50%{
+		transform: rotate(-100deg);
+	}
+	100%{
+		transform: rotate(-150deg);
+	}
+}
+.pal2 .tob{
+	position: absolute;
+	width: 5px;
+	height: 10px;
+	background-color: brown;
+}
+.pal2 #tob1{
+	top: 75px;
+	left: 7px;
+	transform: rotate(20deg);
+}
+.pal2 #tob2{
+	top: 78px;
+	left: 17px;
+}
+.pal2 #tob3{
+	top: 75px;
+	left: 27px;
+	transform: rotate(-20deg);
+}
+.bae{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 70px;
+	left: 16px;
+	background-color: white;
+	border-radius: 100%;
+}
+.foot1{
+	position: absolute;
+	top: 170px;
+	width: 60px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: brown;
+
+}
+.foot2{
+	position: absolute;
+	top: 170px;
+	left: 90px;
+	width: 60px;
+	height: 30px;
+	border-radius: 20px;
+	background-color: brown;
+}
+.coll{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	
+}
+/*-------------------------------------------구름--------------------------------------*/
+.cloud1{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	animation: cloud1 2s linear infinite alternate ;
+}
+.clo1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 0 auto; 
+}
+.clo2{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.clo3{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	
+}
+@keyframes cloud1{
+	0%{
+		left: 25%;
+	}
+	100%{
+		left: 30%;
+	}
+}
+/*-------------------------------------------구름--------------------------------------*/
+.cloud2{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	animation: cloud2 2s linear infinite alternate ;
+}
+.clo1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 0 auto; 
+}
+.clo2{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.clo3{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+@keyframes cloud2{
+	0%{
+		left: 5%;
+	}
+	100%{
+		left: 10%;
+	}
+}
+/*-------------------------------------------구름--------------------------------------*/
+.cloud3{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	animation: cloud3 2s linear infinite alternate ;
+}
+.clo1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 0 auto; 
+}
+.clo2{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.clo3{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+@keyframes cloud3{
+	0%{
+		left: 15%;
+	}
+	100%{
+		left: 20%;
+	}
+}
+/*-------------------------------------------구름--------------------------------------*/
+.cloud4{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 40%;
+	right: 10%;
+	animation: cloud4 2s linear infinite alternate ;
+}
+.clo1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 0 auto; 
+}
+.clo2{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.clo3{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+@keyframes cloud4{
+	0%{
+		right: 5%;
+	}
+	100%{
+		right: 10%;
+	}
+}
+/*-------------------------------------------구름--------------------------------------*/
+.cloud5{
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	top: 80%;
+	right: 30%;
+	animation: cloud5 2s linear infinite alternate ;
+}
+.clo1{
+	width: 100px;
+	height: 100px;
+	background-color: white;
+	border-radius: 100%;
+	margin: 0 auto; 
+}
+.clo2{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.clo3{
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 100%;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+@keyframes cloud5{
+	0%{
+		right: 25%;
+	}
+	100%{
+		right: 30%;
+	}
+}
